@@ -1,0 +1,7 @@
+C:\Users\Serhii\source\repos\Epam_3_2\Epam_3_2\bin\Debug\Epam_3_2.exe.config
+C:\Users\Serhii\source\repos\Epam_3_2\Epam_3_2\bin\Debug\Epam_3_2.exe
+C:\Users\Serhii\source\repos\Epam_3_2\Epam_3_2\bin\Debug\Epam_3_2.pdb
+C:\Users\Serhii\source\repos\Epam_3_2\Epam_3_2\obj\Debug\Epam_3_2.csprojResolveAssemblyReference.cache
+C:\Users\Serhii\source\repos\Epam_3_2\Epam_3_2\obj\Debug\Epam_3_2.csproj.CoreCompileInputs.cache
+C:\Users\Serhii\source\repos\Epam_3_2\Epam_3_2\obj\Debug\Epam_3_2.exe
+C:\Users\Serhii\source\repos\Epam_3_2\Epam_3_2\obj\Debug\Epam_3_2.pdb
