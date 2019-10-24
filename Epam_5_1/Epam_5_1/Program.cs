@@ -8,7 +8,7 @@ namespace Epam_5_1
         {
         private static int lowerBound;
         private int upperBound;
-
+        private static User[] users = new User[100];
         public int UpperBound
         {
             get { return upperBound; }
@@ -19,7 +19,6 @@ namespace Epam_5_1
             get { return lowerBound; } 
             set { lowerBound = value; }
         }
-
         public User()
         {
             Random random = new Random();
@@ -30,10 +29,6 @@ namespace Epam_5_1
         {
             Name = name;
         }
-        // Declare an array to store the data elements.
-        private static User[] users = new User[100];
-
-        // Define the indexer to allow client code to use [] notation.
         public User this[int i]
         {
             get => users[i + lowerBound];
@@ -49,9 +44,7 @@ namespace Epam_5_1
                    if(item != null) a++;
                 return a;
             }
-        }
-
-        
+        } 
     }
     class Program
     {
@@ -75,12 +68,19 @@ namespace Epam_5_1
         }
         static void Main(string[] args)
         {
-            User person = new User();
-            GenerateUsers(person);  
-            Console.WriteLine("Lower bound: " + User.LowerBound);
-            Console.WriteLine("Upper bound: " + person.UpperBound);
-            Console.WriteLine("Length: " + person.Length);
-            ShowUsers(person);
+            //User person = new User();
+            //GenerateUsers(person);
+            //Console.WriteLine("Lower bound: " + User.LowerBound);
+            //Console.WriteLine("Upper bound: " + person.UpperBound);
+            //Console.WriteLine("Length: " + person.Length);
+            //ShowUsers(person);
+            Polynomical pol1 = new Polynomical(2, 0, -7, 3);
+            Polynomical pol2 = new Polynomical(12, 20, -27, 23);
+            Console.WriteLine(pol1.ToString());
+            Console.WriteLine(pol2.ToString());
+            Console.WriteLine(pol1 + pol2);
+            Console.WriteLine(pol1 - pol2);
+            Console.WriteLine(pol1 * pol2);
             Console.ReadKey();
         }
 

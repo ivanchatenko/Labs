@@ -41,9 +41,9 @@ namespace Epam_4_1
         public double AverageArith() =>   (ArithemthicSum() / stepValue);
         public double ArithemthicSum() => (firstValue + endValue) / 2 * stepValue;
     }
-    class Rectangle
+    class Square
     {
-        public Rectangle(int side)
+        public Square(int side)
         {
             Side = side;
         }
@@ -61,7 +61,7 @@ namespace Epam_4_1
     {
         static void Main(string[] args)
         {
-            Rectangle r1 = new Rectangle(5);
+            Square r1 = new Square(5);
             Console.WriteLine(r1.GetArea());
             ArithmethicProgression a1 = new ArithmethicProgression(10,2,7);
             Console.WriteLine(a1.ArithemthicSum());
