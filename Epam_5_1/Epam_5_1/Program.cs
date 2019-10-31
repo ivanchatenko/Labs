@@ -74,13 +74,34 @@ namespace Epam_5_1
             //Console.WriteLine("Upper bound: " + person.UpperBound);
             //Console.WriteLine("Length: " + person.Length);
             //ShowUsers(person);
-            Polynomical pol1 = new Polynomical(2, 0, -7, 3);
-            Polynomical pol2 = new Polynomical(12, 20, -27, 23);
-            Console.WriteLine(pol1.ToString());
-            Console.WriteLine(pol2.ToString());
-            Console.WriteLine(pol1 + pol2);
-            Console.WriteLine(pol1 - pol2);
-            Console.WriteLine(pol1 * pol2);
+
+
+            //Polynomical pol1 = new Polynomical(5,2);
+            //Polynomical pol2 = new Polynomical(1, 2, 3, 4);
+            //Console.WriteLine(pol1.ToString());
+            //Console.WriteLine(pol2.ToString());
+            //Console.WriteLine(pol1+pol2);
+            //Console.WriteLine(pol1 - pol2);
+            //Console.WriteLine(pol1 * pol2);
+            PolynomicalDictionary polDict1 = new PolynomicalDictionary();
+            polDict1[0] = 8;
+            polDict1[1] = 7;
+            polDict1[2] = 6;
+            polDict1[3] = 5;
+            PolynomicalDictionary polDict2 = new PolynomicalDictionary();
+            polDict2[2] = 8;
+            polDict2[3] = 7;
+            PolynomicalDictionary polDict3 = new PolynomicalDictionary();
+            polDict3 = null;
+            // 8 + 7x + 6x^2 + 5x^3
+            // 8x^2 + 7x^3+
+            // a*b = 64x^2 + 56x^3 + 56x^3 + 48x^4 + 48x^4 + 
+            Console.WriteLine(polDict1.ToString());
+            Console.WriteLine(polDict2.ToString());
+            Console.WriteLine(polDict1 + polDict3);
+            //Console.WriteLine(polDict1 - polDict2);
+            Console.WriteLine("\n" + polDict1 * polDict2);
+
             Console.ReadKey();
         }
 
